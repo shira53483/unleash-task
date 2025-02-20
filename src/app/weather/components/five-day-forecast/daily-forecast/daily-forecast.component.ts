@@ -27,10 +27,6 @@ export class DailyForecastComponent implements OnInit, OnDestroy{
   fahrenheitToCelsius(fahrenheit: any): number {
     return Math.round((Number(fahrenheit) - 32) * 5 / 9);
   }
-
-  // fahrenheitToCelsius(fahrenheit: number): number {
-  //   return Number.isFinite(fahrenheit) ? Math.round((fahrenheit - 32) * 5 / 9) : NaN;
-  // }
   
   getIconUrl(iconId: Number) {
     return this.weatherService.getIconUrl(iconId);
