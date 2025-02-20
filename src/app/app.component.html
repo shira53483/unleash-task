@@ -1,0 +1,23 @@
+<div id="app-wrapper">
+  <div id="loader">
+    <mat-progress-bar *ngIf="displayLoading" mode="indeterminate"></mat-progress-bar>
+  </div>
+  <div id="sidenav-container">
+    <h1>WeatherMe</h1>
+
+    <mat-slide-toggle id="slide-toggle-theme" (change)="toggleTheme()">
+      <label>
+        {{ isDarkMode ? 'Dark Mode' : 'Light Mode' }}
+      </label>
+    </mat-slide-toggle>
+    
+    <mat-slide-toggle id="slide-toggle-Fahrenheit" (change)="changeTemperatureUnit()">
+      <label>
+        {{ isFahrenheit ? 'Fahrenheit' : 'Celsius' }}
+      </label>
+    </mat-slide-toggle>
+  </div>
+  <div id="content-wrapper">
+    <router-outlet></router-outlet>
+  </div>
+</div>

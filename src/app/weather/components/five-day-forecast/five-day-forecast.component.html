@@ -1,0 +1,11 @@
+<div *ngIf="fiveDayForecast" class="details-container">
+  <mat-card>
+    <mat-list>
+      <div *ngFor="let day of fiveDayForecast.DailyForecasts" class="forecast-item">
+        <mat-list-item>
+          <app-daily-forecast [dailyForecast]="day"></app-daily-forecast>
+        </mat-list-item>
+      </div>
+    </mat-list>
+  </mat-card>
+</div>

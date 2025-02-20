@@ -1,0 +1,30 @@
+@import '../../../../styles.scss';
+
+.details-container {
+  display: flex;
+  justify-content: center;
+}
+
+mat-card {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  width: 100%;
+}
+
+mat-list {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.forecast-item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+@media (max-width: 1040px) {
+  .forecast-item {
+    flex-direction: column;
+  }
+}

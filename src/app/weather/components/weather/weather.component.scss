@@ -1,0 +1,42 @@
+@import '../../../../styles.scss';
+
+.weather-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.weather-details {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media (max-width: 1040px) {
+  .weather-details {
+    flex-direction: column;
+    justify-content: space-around; 
+    align-items: center;
+  }
+  .weather-details > * {
+    width: 100%;
+    margin-bottom: 10px; 
+  }
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

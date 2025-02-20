@@ -1,0 +1,85 @@
+:root {
+  --primary-bg: #ffffff;
+  --secondary-bg: #f7f2f2;
+  --more-bg: #0000000a;
+  --primary-text: #000000;
+  --secondary-text: #ffffff;
+  --border-color: #cccccc;
+}
+
+.dark-theme {
+  --primary-bg: #121212;
+  --secondary-bg: #444444;
+  --more-bg: #ffffff;
+  --primary-text: #ffffff;
+  --secondary-text: #121212;
+  --border-color: #444444;
+}
+
+html, body { height: 100%;   margin: 0; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+mat-progress-bar .mat-progress-bar-buffer {
+    background: rgb(184, 184, 184);
+}
+  
+mat-progress-bar .mat-progress-bar-fill::after {
+    background: #8fbd11;
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.container {
+  display: grid;
+  // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+mat-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.weather-info h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.weather-info p {
+  margin: 5px 0;
+  font-size: 40px;
+}
+
+mat-icon {
+  font-size: 35px;
+}
+
+.toast-top-center {
+  position: fixed;
+  top: 12px;
+  width: 200px;
+  transform: translateX(50%);
+  right: 50%;
+  width: 100%;
+}

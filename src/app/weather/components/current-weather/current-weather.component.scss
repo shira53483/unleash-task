@@ -1,0 +1,70 @@
+@import '../../../../styles.scss';
+
+.details-container {
+  display: flex;
+  height: 100%;
+}
+
+.current-weather {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  padding: 40px;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+}
+
+mat-card {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  width: 100%;
+  max-width: 600px;
+}
+
+mat-card-header {
+  justify-content: center;
+  margin: 10px;
+}
+
+.weather-info {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.temperature {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.icon {
+  text-align: center;
+  height: 100px;
+}
+
+.weather-icon {
+  animation: pulse 1s infinite;
+}
+
+.weather-text {
+  margin: 20px;
+  font-size: 16px;
+}
+
+@media (max-width:1040px) {
+  mat-card {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
